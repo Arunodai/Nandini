@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nanduchan Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+  </head>
+  <script>
+
+function createSnowflake() {
+
+    const snowflake = document.createElement("div");
+
+    snowflake.classList.add("snowflake");
+
+    snowflake.innerHTML = "❄";
+
+    snowflake.style.left = Math.random() * window.innerWidth + "px";
+
+    snowflake.style.opacity = Math.random();
+
+    snowflake.style.fontSize = (Math.random() * 10 + 10) + "px";
+
+    snowflake.style.animationDuration = (Math.random() * 3 + 2) + "s";
+
+    document.body.appendChild(snowflake);
+
+    setTimeout(() => {
+        snowflake.remove();
+    }, 5000);
+}
+
+setInterval(createSnowflake, 120);
+
+</script>
+<script>
+
+document.addEventListener("mousemove", function(e){
+
+    const heart = document.createElement("div");
+
+    heart.innerHTML = "💖";
+
+    heart.classList.add("heart");
+
+    heart.style.left = e.pageX + "px";
+    heart.style.top = e.pageY + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 1000);
+
+});
+
+</script>
+
+
+  <body>
+    <div class="main">
+      <img class="top-cloud" src="cloud.png" alt="cloud">
+      <h1>I'm Arunodai</h1>
+      <h2>Hey <span class="pro">Nandu</span> You became the favorute part of my story</h2>
+      <img class="bottom-cloud" src="cloud.png" alt="cloud">
+      <img src="mountain.png" alt="mountain">
+    </div>
+    <div class="middle-container">
+      <div class="profile">
+        <img src="boy.png" width="18%" alt="boy">
+        <h2>Hello</h2>
+        <p class="intro">I never thought a single person
+could make ordinary days feel magical.
+
+But then I met you ✨</p>
+      </div>
+      <hr>
+      <div class="skills">
+        <h2>Things I love about you 💖</h2>
+        <div class="skill-row">
+          <img class="computer" src="computer.png" alt="computer pic">
+          <h3>Your Smile 💖</h3>
+          <p>I don’t know how,
+but your smile has this dangerous power….....One second I’m tired,stressed, overthinking everything —and then you smile. Suddenly the whole world feels soft again.
+
+Honestly,
+if peace had a face,
+it would probably look like you Meri pyaari Madam Ji</p>
+        </div>
+        <div class="skill-row">
+          <img class="chilli" src="chillies.png" alt="">
+          <h3>Your Eyes ✨</h3>
+          <p>I could literally forget every beautiful thing
+I’ve ever seen…
+
+because nothing compares to the way
+your eyes look when you’re happy.
+
+And the scary part?
+
+Every time you look at me,
+my heart still reacts
+like it’s the first time.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="contact-me">
+        <h2>somehow my heart chose you.</h2>
+        <h3>I Love you madam Ji💖</h3>
+        <p class="contact-message">I think it made the best decision of my life.
+
+So if you ever feel sad,
+unloved,
+or alone...
+
+remember there’s a boy
+who made an entire webpage
+just to see you smile 💖</p>
+
+        </address>.</p>
+        <a class="btn" href="mailto:Arunodai143@gmail.com"> PRESS THIS FOR A SECRET💖 </a>
+      </div>
+    </div>
+
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/arunodai-kumar-7311911a0/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/Arunodai4">Twitter</a>
+      <a class="footer-link" href="https://stackoverflow.com/users/14817194/arunodai-kumar">stackoverflow</a>
+      <p class="copy-right">© 2026 Arunodai kumar.</p>
+    </div>
+    <div class="hearts">
+  ❤️ ❤️ ❤️
+</div>
+
+
+
+  </body>
+</html>
