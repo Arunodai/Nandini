@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@500&family=Sacramento&display=swap" rel="stylesheet">
   </head>
 
+  
   <script>
 function showSecret() {
     alert("💖 I Love You Nandu Chan!! 💖\n\nYou are the best thing that ever happened to me ✨");
@@ -67,12 +68,16 @@ document.addEventListener("mousemove", function(e){
 
   <body>
     <div class="main">
-      <img class="top-cloud" src="cloud.png" alt="cloud">
-      <h1>I'm Arunodai</h1>
-      <h2>Hey <span class="pro">Nandu</span> You became the favorute part of my story</h2>
-      <img class="bottom-cloud" src="cloud.png" alt="cloud">
-      <img src="mountain.png" alt="mountain">
-    </div>
+  <img class="top-cloud" src="cloud.png" alt="cloud">
+
+  <h1>I'm Arunodai</h1>
+  <h2>Hey <span class="pro">Nandu</span> You became the favorite part of my story</h2>
+
+  <div id="countdown"></div>
+
+  <img class="bottom-cloud" src="cloud.png" alt="cloud">
+  <img src="mountain.png" alt="mountain">
+</div>
     <div class="middle-container">
       <div class="profile">
         <img src="boy.png" width="18%" alt="boy">
@@ -142,6 +147,34 @@ just to see you smile 💖</p>
   ❤️ ❤️ ❤️
 </div>
 
+<script>
+function updateCountdown() {
+    const now = new Date();
+
+    let birthday = new Date(now.getFullYear(), 7, 27); // August 27
+
+    if (now > birthday) {
+        birthday = new Date(now.getFullYear() + 1, 7, 27);
+    }
+
+    const diff = birthday - now;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("countdown").innerHTML =
+        "🎂 Nandu's Birthday In<br>" +
+        days + " Days 💖 " +
+        hours + " Hours 💖 " +
+        minutes + " Minutes 💖 " +
+        seconds + " Seconds";
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
 
 
   </body>
